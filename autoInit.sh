@@ -33,14 +33,13 @@ author=${USER:-"Unknown"}
 case "$lang_type" in
     python|PYTHON|py|파이썬)
         filename="Main.py"
-        #echo "# Main.py" > "$filename" 
         echo "# 작성자: $author" > "$filename"
         echo "# TODO: 여기에 코드를 작성하세요" >> "$filename"
         ;;
     c|C|씨)
         filename="main.c"
-        echo "// main.c 작성자: $author" > "$filename"
-        echo "// TODO: Implement main function" >> "$filename"
+        echo "// 작성자: $author" > "$filename"
+        echo "// TODO: main 함수 작성" >> "$filename"
         ;;
     *)
         filename="main.txt"
